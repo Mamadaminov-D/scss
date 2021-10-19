@@ -1,0 +1,43 @@
+.site-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.site-hero__texts {
+  width: 60%;
+}
+
+.site-hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-hero__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.site-hero__link {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(214, 212, 212, 0.88);
+}
+
+.site-hero__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-hero__btn:not(:last-child) {
+  margin-right: 55px;
+}
+
+.site-hero__imgs {
+  width: 40%;
+}
+/*# sourceMappingURL=site-hero.css.map */
