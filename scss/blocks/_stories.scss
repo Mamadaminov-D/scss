@@ -1,5 +1,6 @@
 .stories {
   display: flex;
+  flex-flow: row wrap;
   padding-top: 80px;
   padding-top: 55px;
   background-image: url("../../img/quote.svg");
@@ -100,5 +101,31 @@
     line-height: 24px;
     color: #969bab;
     opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  .stories{
+    flex-direction: column;
+
+    &__left{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      padding-left: 0;
+    }
+    &__title{
+      max-width: 100%;
+      width: 100%;
+    }
+    &__subtitle{
+      align-self: center;
+    }
+    &__right{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

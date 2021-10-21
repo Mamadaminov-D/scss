@@ -1,0 +1,66 @@
+.serve {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &__texts {
+    width: 40%;
+  }
+  &__title {
+    font-family: $font-inter;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #18191f;
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    font-family: $font-inter;
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191f;
+  }
+  &__list {
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 120px;
+    height: 120px;
+
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .serve{
+
+    &__texts{
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    &__list{
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width:572px) {
+  .serve{
+
+    &__title{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__list{
+      justify-content: center;
+    }
+  }
+}
