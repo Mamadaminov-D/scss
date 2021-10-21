@@ -1,0 +1,104 @@
+.stories {
+  display: flex;
+  padding-top: 80px;
+  padding-top: 55px;
+  background-image: url("../../img/quote.svg");
+  background-size: 145px 120px;
+  background-repeat: no-repeat;
+  background-position: top 0 left 64px;
+
+  &__left {
+    width: 50%;
+    padding-left: 160px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .story {
+        max-width: 350px;
+        padding-bottom: 95px;
+        padding-left: 64px;
+    
+      &::before{
+        background-image: url("../../img/stories-img1.svg");
+        width: 120px;
+      }
+    }
+  }
+  &__title {
+    max-width: 450px;
+    font-family: $font-inter;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #18191f;
+    margin-bottom: 8px;
+    align-self: flex-start;
+  }
+  &__subtitle {
+    font-family: $font-inter;
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191f;
+    margin-bottom: 25px;
+    align-self: flex-start;
+  }
+  &__right {
+    width: 50%;
+    padding-top: 60px;
+    padding-left: 30px;
+  }
+}
+.story {
+  background-color: #fff;
+  background-image: url("../../img/quote-small.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: top 105px left 32px;
+  box-shadow: 0px 10px 20px #29292a12;
+  border-radius: 8px;
+  padding: 32px;
+  padding-left: 64px;
+  max-width: 450px;
+  margin-bottom: 32px;
+
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    background-image: url("../../img/stories-img2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 21px;
+  }
+  &:nth-child(2){
+    max-width: 350px;
+  }  
+  &:nth-child(2)::before{
+    background-image: url("../../img/stories-img3.svg");
+    width: 120px;
+  }  
+  &__desc {
+    font-family: $font-inter;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 25px;
+  }
+  &__title {
+    font-family: $font-inter;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #18191f;
+  }
+  &__text {
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #969bab;
+    opacity: 0.8;
+  }
+}

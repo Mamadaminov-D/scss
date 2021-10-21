@@ -1,0 +1,191 @@
+.plans {
+  padding-top: 120px;
+  padding-bottom: 105px;
+
+  &__title {
+    max-width: 650px;
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+  &__text {
+    font-family: $font-poppins;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 65px;
+  }
+  &__titles {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 855px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    border-bottom: 4px solid #c4c4c4;
+    position: relative;
+  }
+  &__type {
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    margin-bottom: 6px;
+
+    &--active::after{
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      left: 0;
+      bottom: -4px;
+      background-color: #B00000;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+
+  &__text {
+    font-family: $font-poppins;
+    font-size: 25px;
+    line-height: 25px;
+    color: #000;
+  }
+  &__btn {
+    width: 95px;
+    height: 50px;
+    background: #B00000;
+    border: none;
+    border-radius: 75px;
+    margin: 0 28px;
+    position: relative;
+    cursor: pointer;
+  }
+  &__span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+  }
+  .left &__span{
+    left: 55px;
+  }
+  &__discount {
+    font-family: $font-poppins;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 9px;
+    color: #000;
+    padding: 7px 8px;
+    background: #ffe87a;
+    border-radius: 8px;
+    margin-left: 15px;
+  }
+}
+.plan {
+  width: 300px;
+  background: #fff;
+  border: 1.5px solid #c4c4c4;
+  box-shadow: inset 0px 0px 4px #00000040;
+  border-radius: 15px;
+  padding: 35px;
+  margin-bottom: 35px;
+
+  &__title {
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: $font-poppins;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 28px;
+  }
+  &__cost {
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 35px;
+
+    span{
+      font-family: $font-poppins;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      color: #000;
+    }
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-family: $font-inter;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("../../img/Checkmark.svg");
+      margin-right: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width:580px) {
+  .plans__title{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .toggle{
+    flex-direction: column;
+
+    &__btn{
+      margin: 15px 0;
+    }
+    &__discount{
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+}
